@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>AngularJS Material App</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="./bower_components/angular-loading-bar/build/loading-bar.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic">
+	<link rel="stylesheet" href="./assets/css/helper.css" >
+    <link rel="stylesheet" href="./assets/css/app.css" >
+  </head>
+
+  <body ng-app="SecimApp" layout="row" ng-controller="AppCtrl">
+ 
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2 left-menu" md-component-id="left" md-is-locked-open="$media('gt-sm')">
+		<md-content class="md-leftnav-content">
+			<div id="logo">
+
+			</div>
+			<p hide-md show-gt-md>
+			  <div id="mainNav" ng-include="'./view-home/main-menu.html'"></div>
+			</p>
+		</md-content> 
+    </md-sidenav>
+	  
+    <div layout="column" flex>
+		<md-toolbar>
+			<div id="topTitle" layout="row" class="md-toolbar-tools">
+				<md-button class="m-r-15" aria-label="Menu" ng-click="toggleSidenav('left')" hide-gt-sm>
+					<ng-md-icon icon="menu" size="32"></ng-md-icon>
+				</md-button>
+				<div class="md-toolbar-item md-breadcrumb" flex>
+				  <h1 class="text-center all-caps bold" flex>{{title}}</h1>
+				</div>
+				<div class="md-toolbar-item md-tools">
+					<md-button class="" aria-label="Menu" ng-click="toggleSidenav('left')">
+						<ng-md-icon icon="3d_rotation" size="24"></ng-md-icon>
+					</md-button>
+					<md-button class="" aria-label="Menu" ng-click="toggleSidenav('left')">
+						<ng-md-icon icon="3d_rotation" size="24"></ng-md-icon>
+					</md-button>
+			<md-button class="" aria-label="Profile" ng-click="openBottomSheet()"><ng-md-icon icon="3d_rotation" size="24"></ng-md-icon></md-button>
+				</div>
+			</div>
+		</md-toolbar>
+
+
+      <div layout="column" flex class="content-wrapper" id="content">
+        <md-content layout="column" flex class="md-padding">
+			<div ng-view="" id="pageArea"></div>
+        </md-content>
+      </div>
+		
+    </div>
+
+    <script src="./bower_components/hammerjs/hammer.js"></script>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-resource/angular-resource.js"></script>
+
+    <script src="./bower_components/angular-loading-bar/build/loading-bar.js"></script>
+	<script src="./bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    
+    <script src="./app.js"></script>
+    <script src="./view-home/home.js"></script>
+    <script src="./view-city/cities.js"></script>
+    <script src="./view-party/parties.js"></script>
+
+  </body>
+</html>

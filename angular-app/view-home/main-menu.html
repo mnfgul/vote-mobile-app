@@ -1,0 +1,11 @@
+<md-list id="leftMenu">
+	<md-item ng-repeat="item in menuItems">
+		<md-item-content>
+		  <md-button ng-href="#/{{item.url}}/" ng-click="selectMenu($index)" ng-class="{'selected' : $index === selectedMenu }">
+			<ng-md-icon icon="{{item.icon}}" size="24"></ng-md-icon>
+			  {{item.label}}
+		  </md-button>
+		</md-item-content>
+		<md-divider ng-if="!$last"></md-divider>
+	</md-item>
+</md-list>

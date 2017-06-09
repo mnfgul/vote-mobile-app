@@ -1,0 +1,123 @@
+//out: ../css/helper.css
+
+/*Vars*/
+//Colors
+@color-primary:#0aa699;
+@color-primary-dark:#438a85;
+@color-primary-light:#f3faf8;
+
+@color-success:#0090d9;
+@color-success-dark:#246a8e;
+@color-success-light:#ebf6fb;
+@color-succss-inverse:#1f3853;
+
+@color-danger:#f35958;
+@color-danger-dark:#e76e70;
+@color-danger-light:#fff6f4;
+
+@color-warning:#fbb05e;
+@color-warning-dark:#ce8f22;
+@color-warning-light:#fffcee;
+@color-warning-luminous:#fdd01c;
+
+@color-info:#1f3853;
+@color-highlight: #fcf8e3;
+
+@color-white: #ffffff;
+@color-dark : #1B1E24;
+@color-green: #0aa699;
+@color-blue: #00acec;
+@color-yellow: #FDD01C ;
+@color-red: #f35958;
+@color-grey: #8b91a0;
+@color-black: #1b1e24;
+@color-purple: #852b99;
+
+
+
+/*============================= Dividers =================================*/
+.vertical-divider{display: inline-block; margin: 0px 5px; width: 1px; height: 100%; background: #fff; }
+
+
+
+
+/*============================= Margin and Padding helpers =================================*/
+//Generic Padding Options 
+
+.generate-paddings-options(20);
+.generate-paddings-options(@n, @i: 1) when (@i =< @n) {
+  @step : @i*5;
+  .p-all-@{step} { padding: (@step*1px); }
+  .p-t-@{step} { padding-top: (@step*1px);}
+  .p-r-@{step} { padding-right: (@step*1px);}
+  .p-l-@{step} { padding-left: (@step*1px);}
+  .p-b-@{step} { padding-bottom: (@step*1px);}
+  .generate-paddings-options(@n, (@i + 1));
+}
+
+.generate-margin-options(13);
+.generate-margin-options(@n, @i: 1) when (@i =< @n) {
+  @step : @i*5;
+  .m-all-@{step} {margin: (@step*1px);}
+  .m-t-@{step} {margin-top: (@step*1px);}
+  .m-r-@{step} {margin-right: (@step*1px);}
+  .m-l-@{step} {margin-left: (@step*1px);}
+  .m-b-@{step} {margin-bottom: (@step*1px);}
+  .generate-margin-options(@n, (@i + 1));
+}
+
+
+.no-padding { padding: 0px !important; padding: 0px !important;}
+.no-margin { margin: 0px !important; margin: 0px !important; }
+.spacing-bottom {margin-bottom: 30px;}
+.inherit-size {width: inherit;height: inherit;}
+.inherit-height {height: inherit;}
+.v-align-bottom {vertical-align: bottom;display: table-cell;}
+.v-align-top {vertical-align: top;display: table-cell;}
+.v-align-middle {vertical-align: middle;display: table-cell;}
+.h-align-middle {margin-left: auto;margin-right: auto;display: table;}
+.hide { display: none;}
+
+
+
+/*============================= Typo Classes =================================*/
+.normal {font-weight: normal;}
+.semi-bold {font-weight: 600;}
+.bold {font-weight: bold;}
+.all-caps {text-transform: uppercase;}
+.light {font-weight: 300 !important;}
+
+.x-small-text {font-size: 10.5px !important;}
+.small-text {font-size: 12px !important;}
+.normal-text {font-size: 13px !important;}
+.large-text {font-size: 15px !important;}
+.x-large-text {font-size: 18px !important;}
+.xx-large-text {font-size: 22px !important;}
+.center-text { text-align: center !important;}
+.muted { color: #b6bfc5; }
+
+.text-right {text-align: right !important;}
+.text-left {text-align: left !important;}
+.text-center {text-align: center !important;}
+
+/*Colors*/
+.bg-blue {background-color: @color-blue !important;}
+.bg-red {background-color: @color-red !important;}
+.bg-yellow {background-color: @color-yellow !important;}
+.bg-green {background-color: @color-green !important;}
+.bg-purple {background-color: @color-purple !important;}
+.bg-grey {background-color: @color-grey !important;}
+
+.text-green{color: @color-green !important;}
+.text-blue{color: @color-blue !important;}
+.text-yellow {color: @color-yellow !important;}
+.text-red {color: @color-red !important}
+.text-black { color: @color-black !important;}
+.text-purple { color: @color-purple !important; }
+.text-white { color:  @color-white  !important; }
+.text-grey { color: @color-grey !important; }
+
+.text-success { color: @color-primary !important;}
+.text-info { color: @color-success !important; }
+.text-warning { color: @color-warning !important; }
+.text-error {color: @color-danger !important;}

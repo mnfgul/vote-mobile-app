@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Secim2015": {
+            "applicationId": "", 
+            "masterKey": ""
+        }, 
+        "_default": {
+            "link": "Secim2015"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.5"
+    }
+}

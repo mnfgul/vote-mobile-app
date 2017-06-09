@@ -1,0 +1,115 @@
+
+/*Main Styles*/
+#loading-bar-spinner{top: 50%; left: 50%;}
+#loading-bar-spinner .spinner-icon {width: 48px; height: 48px; border-radius: 40px;}
+
+
+/*Left Menu*/
+.left-menu{background: url(../img/dark-bg.png) repeat; color: #fff;}
+.left-menu a{color: #fff;}
+.left-menu .menuItem{ border-bottom: 1px solid #5f6b85;}
+.md-leftnav-content{background: none !important;}
+
+#logo{height: 100px;}
+
+
+/*----------------------------------------- Content ------------------------------------------*/
+
+/* Primary content area */
+#content { overflow: hidden; }
+md-content.md-default-theme{background: url("http://subtlepatterns.com/patterns/halftone.png") repeat;}
+md-card.md-default-theme{background: #fff;}
+#content img { display: block; height: auto; max-width: 500px;}
+
+/*Listing*/
+.listItem .listContent{padding: 10px 5px;} 
+
+/*Parties*/
+.party-logo{display: inline-block; margin: 0px 15px 0px 0px; width: 60px; height: 60px; border-radius: 50%; vertical-align: middle;
+	background-size: cover; border: 4px solid #e5e9ec;
+}
+
+
+
+md-toolbar h1 {
+  margin: auto;
+}
+
+/* Sidenav area */
+
+md-list .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+  md-list .md-button.selected {
+    color: #03a9f4;
+  }
+
+.avatar {
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin: 0px;
+}
+
+
+
+/* Utils */
+
+.content-wrapper {
+  position: relative;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Typography support coming in 0.8.0 */
+
+md-toolbar h1 {
+  font-size: 1.250em;
+  font-weight: 400;
+}
+
+
+
+
+/*PArty Logos*/
+.party-logo-82{background-image: url(../img/logos/ak-parti-100.png);}
+.party-logo-83{background-image: url(../img/logos/chp-100.png);}
+.party-logo-84{background-image: url(../img/logos/mhp-100.png);}
+.party-logo-85{background-image: url(../img/logos/hdp-100.png);}
+.party-logo-88{background-image: url(../img/logos/bagimsiz-100.png);}
+.party-logo-91{background-image: url(../img/logos/bbp-100.png);}
+.party-logo-92{background-image: url(../img/logos/dbp-100.png);}
+.party-logo-93{background-image: url(../img/logos/saadet-100.png);}
+.party-logo-94{background-image: url(../img/logos/ldp-100.png);}
+.party-logo-95{background-image: url(../img/logos/hepar-100.png);} 
+.party-logo-102{background-image: url(../img/logos/btp-100.png);}
+.party-logo-103{background-image: url(../img/logos/dp-100.png);}
+.party-logo-104{background-image: url(../img/logos/dsp-100.png);}
+.party-logo-105{background-image: url(../img/logos/dyp-100.png);}
+.party-logo-106{background-image: url(../img/logos/emep-100.png);}
+.party-logo-107{background-image: url(../img/logos/hakpar-100.png);}
+.party-logo-108{background-image: url(../img/logos/hkp-100.png);}
+.party-logo-109{background-image: url(../img/logos/hudapar-100.png);}
+.party-logo-110{background-image: url(../img/logos/hyp-100.png);}
+.party-logo-111{background-image: url(../img/logos/ip-100.png);}
+.party-logo-112{background-image: url(../img/logos/mp-100.png);}
+.party-logo-113{background-image: url(../img/logos/myp-100.png);}
+.party-logo-114{background-image: url(../img/logos/odp-100.png);}
+.party-logo-115{background-image: url(../img/logos/tkp-100.png);}
+.party-logo-116{background-image: url(../img/logos/turkparti.png);}
+.party-logo-117{background-image: url(../img/logos/yurtp.png);}
+.party-logo-118{background-image: url(../img/logos/anaparti-100.png);}
+.party-logo-119{background-image: url(../img/logos/eparti-100.png);}
+.party-logo-120{background-image: url(../img/logos/dgp-100.png);}
+.party-logo-121{background-image: url(../img/logos/milad-100.png);}

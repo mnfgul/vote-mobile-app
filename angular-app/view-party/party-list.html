@@ -1,0 +1,21 @@
+<div id="partlistPage" class="page">
+	<md-card>
+		<md-list class="list">
+		  <md-item ng-repeat="party in parties" class="listItem">
+			  <md-button href="#" class="md-accent" flex layout="row" class="listItemBtn">
+				  <div class="md-tile-left">
+					  <span class="party-logo party-logo-{{party['term-id']}}"></span>
+				  </div>
+				  <div class="md-tile-content listContent">
+					<h3 class="text-black">{{party['party-name']}}</h3>
+					<p class="muted">{{party['party-long-name']}}</p>
+				  </div>
+				  <div class="md-tile-right">
+					<div class="city-profile-count">{{party['profile-count']}}</div>
+				  </div>
+			  </md-button>
+			<md-divider></md-divider>
+		  </md-item>
+		</md-list>
+	</md-card>
+</div>
